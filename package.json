@@ -1,20 +1,22 @@
 {
   "name": "zqq-react-component",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "main": "build/index.js",
   "module": "build/index.js",
   "types": "build/index.d.ts",
   "scripts": {
     "dev": "node scripts/start.js",
     "build": "npm run clean && npm run build-ts && npm run build-css",
-    "test": "node scripts/test.js",
+    "test": "",
+    "testdev": "node scripts/setupTests.js",
+    "lint": "",
     "clean": "rimraf dist",
     "build-ts": "tsc -p tsconfig.build.json",
     "build-css": "node-sass ./src/styles/index.scss ./dist/index.css",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
-    "prepublish": "npm run test && npm run build"
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
@@ -88,7 +90,7 @@
     "file-loader": "^6.2.0",
     "fs-extra": "^10.0.0",
     "html-webpack-plugin": "^5.5.0",
-    "husky": "^7.0.4",
+    "husky": "^7.0.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.4.3",
     "jest-resolve": "^27.4.2",
