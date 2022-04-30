@@ -2,9 +2,9 @@
   "name": "zqq-react-component",
   "version": "0.1.0",
   "private": false,
-  "main": "build/index.js",
-  "module": "build/index.js",
-  "types": "build/index.d.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "dev": "node scripts/start.js",
     "build": "npm run clean && npm run build-ts && npm run build-css",
