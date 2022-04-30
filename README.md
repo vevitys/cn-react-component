@@ -41,7 +41,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 [story-book](https://storybook.js.org/)
 
 ### 组件单元测试
-[jest](https://www.jestjs.cn/)
+[jest](https://www.jestjs.cn/)  
 jest库扩展[jest-dom](https://github.com/testing-library/jest-dom)
 
 ### React 官方文档
